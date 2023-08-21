@@ -1,27 +1,35 @@
-* {
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
+
+
+
+.image{
+  display: block; /* Necessário para o margin funcionar */
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50%;
+  margin-top: 3%;
+}
+
+
+.textos{
+  text-align: center;
 }
 
 .Planos {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.textos{
-  text-align: center;
-}
 
-.image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
 }

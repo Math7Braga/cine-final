@@ -3,14 +3,11 @@
     <h1 class="display-4">Filmes</h1>
 </div>
 
-<main role="main" class="flex-shrink-0">
+<main role="main" class="tudo">
     <div class="container">
-        <div class="card-deck mb-3 text-center">
-            <div *ngFor="let filme of filmes">
-                <div class="row mb-2">
-                    <cin-filme [filme]="filme"></cin-filme>
-                </div>
-            </div>
+        <div class="card-deck mb-3 ">
+            <cin-filme *ngFor="let filme of filmes" [filme]="filme"></cin-filme>
+            
             <div *ngIf="filmes.length == 0">
                 <h3 style="color: red">Não existem filmes nessa categoria!</h3>
             </div>
